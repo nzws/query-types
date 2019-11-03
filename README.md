@@ -4,7 +4,7 @@
 
 ```javascript
 import PropTypes from 'prop-types';
-import QueryTypes from 'query-types';
+import QueryTypes from '@yuzulabo/query-types';
 
 const types = {
   ping: PropTypes.string.isRequired

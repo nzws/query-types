@@ -1,6 +1,6 @@
 {
   "name": "@yuzulabo/query-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "description": "A variable validator using prop-types",
   "author": "nzws <git@nzws.me>",
