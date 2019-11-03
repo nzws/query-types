@@ -5,7 +5,14 @@ const QueryTypes = (types = {}, query = {}) => {
   Object.keys(types).forEach(typeName => {
     let error;
     try {
-      error = types[typeName](query, typeName, null, null, null, _PROP_TYPES_SECRET_);
+      error = types[typeName](
+        query,
+        typeName,
+        null,
+        null,
+        null,
+        _PROP_TYPES_SECRET_
+      );
     } catch (e) {
       error = e;
     }
