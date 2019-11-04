@@ -23,12 +23,16 @@ const QueryTypes = (types = {}, query = {}) => {
       }
 
       errors.push({
-        name: typeName
+        name: typeName,
+        message: error.message
       });
     }
   });
 
-  return !errors[0] ? false : errors;
+  return {
+    valid: !errors[0],
+    errors
+  };
 };
 
 module.exports = QueryTypes;

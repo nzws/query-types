@@ -20,6 +20,6 @@ const badQuery = {
   }
 };
 
-QueryTypes(types, goodQuery); // false
-QueryTypes(types, badQuery); // [ { name: 'ping' } ]
+QueryTypes(types, goodQuery); // { valid: true, errors: [] }
+QueryTypes(types, badQuery); // { valid: false, errors: [ { name: 'ping', message: 'Invalid null `ping`...' } ] }
 ```
